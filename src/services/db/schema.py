@@ -20,6 +20,7 @@ class CatalogueItemSchema(SQLAlchemySchema):
     checksum_algorithm = auto_field()
     checksum_value = auto_field()
 
+    transfer_id = auto_field()
     transfer_status = auto_field()
     transfer_checksum_value = auto_field()
     transfer_checksum_verification = auto_field()

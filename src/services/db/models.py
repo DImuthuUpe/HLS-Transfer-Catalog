@@ -31,6 +31,7 @@ class CatalogueItem(db.Model):
     checksum_algorithm = db.Column(db.String)
     checksum_value = db.Column(db.String)
 
+    transfer_id = db.Column(db.String, nullable=True)
     transfer_status = db.Column(db.String, default=TransferStatus.NOT_STARTED.value)
     transfer_checksum_value = db.Column(db.String, nullable=True)
     transfer_checksum_verification = db.Column(db.String(20), nullable=True)

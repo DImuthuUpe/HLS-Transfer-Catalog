@@ -54,6 +54,7 @@ curl --location --request POST 'http://127.0.0.1:5000/catalogue/bulk/csv/' \
 --header 'token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidWRheSIsInBhc3N3b3JkIjoidWRheSIsImV4cCI6MTY1MjMzNTgzNn0.UfKN62xWmsXTzwy7tmRbP6I9DbrtXMnidQFFLq6epfs' \
 --form 'csv=@"/Users/udaykumarbommala/Downloads/test.csv"
 ```
+curl -v -F 'csv=@/home/dimuthu/Downloads/gael-nasa-pca-listing.csv' http://127.0.0.1:5000/catalogue/bulk/csv/
 
 ## 2) /catalogue/ - GET, all items
 

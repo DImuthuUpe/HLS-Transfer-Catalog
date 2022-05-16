@@ -4,11 +4,11 @@ import os
 class BaseConfig:
     DB_HOST = os.getenv("DB_HOST", "localhost")
     DB_PORT = os.getenv("DB_PORT", 5432)
-    DB_NAME = os.getenv("DB_NAME", "tempdb")
-    DB_USER = os.getenv("DB_USER")
-    DB_PASSWORD = os.getenv("DB_PASSWORD")
+    DB_NAME = os.getenv("DB_NAME", "hls_catalog")
+    DB_USER = os.getenv("DB_USER", "hls")
+    DB_PASSWORD = os.getenv("DB_PASSWORD", "123456")
     DB_TYPE = os.getenv("DB_TYPE", "postgresql")
-    ITEMS_PER_PAGE = int(os.getenv("ITEMS_PER_PAGE", 1000))
+    ITEMS_PER_PAGE = int(os.getenv("ITEMS_PER_PAGE", 256))
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
     JWT_TOKEN_EXPIRATION_SECONDS = os.getenv("JWT_TOKEN_EXPIRATION_SECONDS", 300)
 
